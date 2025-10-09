@@ -10,4 +10,3 @@ What is your name? Paul
 
 name = input("What is your name? ")
 print("!" + name + "!" + name + "!")
-
