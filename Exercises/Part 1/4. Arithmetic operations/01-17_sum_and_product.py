@@ -27,6 +27,6 @@ print("The product of the numbers:", number1 * number2)
  
  
 #Review
-My solution arrives at the same output. The only difference is that I used an f-string fot the print.
+My solution results in the same output. The only difference is that I used an f-string fot the print.
 
 """
