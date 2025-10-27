@@ -15,6 +15,9 @@ The second and the second to last characters are a
 
 """
 # Write your solution here
+
+#First version without string input validation
+"""
 input_string = input("Please type in a string: ")
 result = ""
 
@@ -24,7 +27,19 @@ else:
     result = "different"
 
 print(f"The second and the second to last characters are {result}")
+"""
+#Second version with input validation
+input_string = input("Please type in a string: ")
+result = ""
 
+if len(input_string) < 2: #Added this input validation after seeing suggested solution
+    result = "the same character" #If only one character is entered, it should be the same
+elif input_string[1] == input_string[-2]:
+    result = f"{input_string[1]}"
+else:
+    result = "different"
+
+print(f"The second and the second to last characters are {result}")
 """
 # Suggested solution
 
@@ -39,5 +54,6 @@ else:
 
 #Review
 My solution results in the same output, the suggested one makes an additional check
-to make sure there is no index out of range error.
+to make sure there is no index out of range error. I added an input validation to
+my own solution while keeping one print statement at the end.
 """ 
