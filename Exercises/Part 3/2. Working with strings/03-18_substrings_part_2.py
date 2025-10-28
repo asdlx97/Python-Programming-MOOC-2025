@@ -33,4 +33,5 @@ while start >= 0:
 Same script, same output. Was more work than expected to adapt from previous exercise, 
 but lots of fun!
 
+#TODO Rewrite this with a for loop once covered in the course
 """ 
