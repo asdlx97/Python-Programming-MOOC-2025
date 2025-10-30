@@ -21,8 +21,9 @@ i = 1
 
 print(sentence[0]) #We can already print first letter (of first word)
 
-while i <= len(sentence):
-    if sentence[i-1] == " ":
+# while i <= len(sentence): #This would give an indexing error when sentence ends with extra " "
+while i < len(sentence):
+    if sentence[i-1] == " " and sentence[i] != " ": #Also check if sentence doesn't contain succeeding spaces
         print(sentence[i])
 
     i += 1
@@ -43,6 +44,8 @@ while index < len(sentence):
     index += 1
 
 #Review
-My solution results in the same output.
+My solution results in the same output. But had to fix possible indexing error. 
+Additionally fixed possible scenario where there are two " " 
+right after eachother within the sentence.
 
 """ 
