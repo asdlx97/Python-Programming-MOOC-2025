@@ -15,14 +15,14 @@ Tuomas
 
 """
 # Write your solution here
-def seven_brothers():
-    print("Aapo")
+def seven_brothers():#Function header including function name
+    print("Aapo")#Start function body
     print("Eero")
     print("Juhani")
     print("Lauri")
     print("Simeoni")
     print("Timo")
-    print("Tuomas")
+    print("Tuomas")#End function body
 
 # You can test your function by calling it within the following block
 if __name__ == "__main__":
@@ -31,15 +31,15 @@ if __name__ == "__main__":
 """
 # Suggested solution
 
-def seven_brothers():
-    print("Aapo")
+def seven_brothers(): 
+    print("Aapo") 
     print("Eero")
     print("Juhani")
     print("Lauri")
     print("Simeoni")
     print("Timo")
-    print("Tuomas")
-    
+    print("Tuomas") 
+
 if __name__ == "__main__":
     seven_brothers()
 
