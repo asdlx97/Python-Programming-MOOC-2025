@@ -1,4 +1,63 @@
+"""
+Please write a function named spruce, which takes one argument. 
+The function prints out the text a spruce!, and the a spruce tree, the size of which is specified by the argument.
+
+Calling spruce(3) should print out
+
+Sample output
+a spruce!
+  *
+ ***
+*****
+  *
+Calling spruce(5) should print out
+
+Sample output
+a spruce!
+    *
+   ***
+  *****
+ *******
+*********
+    *
+NB: to the left of the spruce there should be exactly the right amount of whitespace. 
+If the shape of the spruce looks correct, but the left edge of the tree is not touching the left edge of the text area in the terminal, 
+the tests will not accept the solution.
+"""
+
 # Write your solution here
+def spruce(size):
+
+    i = 1
+    j = 1
+
+    print("a spruce!")
+    while i <= size:
+        print(f'{" "* (size-i)}{"*"*j}')
+        i += 1
+        j += 2
+
+    print(f'{" "* (size-1)}{"*"*1}')
+
+    
 # You can test your function by calling it within the following block
 if __name__ == "__main__":
-    spruce(5)
+    spruce(6)
+
+"""
+# Suggested Solution
+
+def spruce(height):
+    print("a spruce!")
+    i = 1
+    while i <= height:
+        empty = height - i
+        stars = 2 * i - 1
+        print(" " * empty + "*" * stars)
+        i += 1
+    print(" " * (height - 1) + "*")
+
+#Review
+My suggestion results in the same output. Suggested one uses more intermediate steps by cimputing the no. of stars mathematically,
+I just use another tracking variable.
+"""
