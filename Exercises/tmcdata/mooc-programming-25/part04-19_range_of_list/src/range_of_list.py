@@ -28,5 +28,6 @@ def range_of_list(my_list : list):
 
 #Review
 My solution results in the same output, however the suggested one is more memory efficiënt as
-mine has to store and extra variable. Suggested one also reads more naturally.
+mine has to store and extra variable. Suggested one also reads more naturally and uses type hints for the 
+parameters in the definition, which I should start doing!
 """
