@@ -36,7 +36,7 @@ robot_w = robot.get_width() #returns the width of the image in pixels
 robot_h = robot.get_height() #returns the length of the image in pixels
 
 window.fill(
-    (000, 000, 000)
+    (255,160,122)
 )  # fill method fills the window with the RGB tuple passed as an argument
 # window.blit(
 #     robot, (100, 50)
