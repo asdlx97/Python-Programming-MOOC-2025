@@ -1,4 +1,8 @@
 
+"""
+Please write a program which draws a robot in each of the four corners of the window.
+"""
+
 # The exercises in this part of the course have no automated tests, as the results as visually verified.
 # The tests grant points automatically as you submit your solution to the server, no matter what your implementation.
 # Only submit your solution when you are ready, and your solution matches the exercise description.
@@ -64,3 +68,34 @@ while True:
     ):  # returns a list of any events collected since the previous iteration
         if event.type == pygame.QUIT:
             exit()
+
+"""
+#Suggested solution
+
+import pygame
+ 
+pygame.init()
+width, height = 640, 480
+screen = pygame.display.set_mode((width, height))
+ 
+robot = pygame.image.load("robot.png")
+ 
+right_x = width-robot.get_width()
+down_y = height-robot.get_height()
+ 
+screen.fill((0, 0, 0))
+screen.blit(robot, (0, 0))
+screen.blit(robot, (right_x, 0))
+screen.blit(robot, (0, down_y))
+screen.blit(robot, (right_x, down_y))
+pygame.display.flip()
+ 
+while True:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            exit()
+
+#Review
+My solution results in the same output, the suggested one
+defined other variables than I did.
+"""
