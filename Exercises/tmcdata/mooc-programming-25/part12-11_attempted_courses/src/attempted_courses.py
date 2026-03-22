@@ -39,7 +39,7 @@ s3 = CourseAttempt("Peter Python", "Advanced Course in Programming", 2)
 
 for name in course_names([s1, s2, s3]):
     print(name)
-    
+
 Sample output
 Advanced Course in Programming
 Introduction to Programming
@@ -103,6 +103,6 @@ def course_names(course_names: list):
  
 
 #Review
-My solution results in the same output, the suggested one uses the
-choice() method from the random module while I use teh choices() method.
+My solution results in the same output, the suggested one uses a helper
+function for the names and uses two steps for the course names.
 """
